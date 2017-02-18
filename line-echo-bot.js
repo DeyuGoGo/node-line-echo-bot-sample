@@ -3,7 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var request = require('request');
 var LINE_API_REPLY = "https://api.line.me/v2/bot/message/reply";
-var YOUR_CHANNEL_ACCESS_TOKEN = "" ;//your acccess token
+var YOUR_CHANNEL_ACCESS_TOKEN = process.env.CHANNEL_ACCESS_TOKEN ;//your acccess token
 var CHANNEL_ACCESS_TOKEN = "Bearer " + YOUR_CHANNEL_ACCESS_TOKEN ;
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
