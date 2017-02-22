@@ -10,7 +10,6 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json())
 
 app.post('/linego', (req, res) => {
-  console.log(req);
   console.log(req.body);
   res.send('Hello World')
   const result = req.body.events;
