@@ -41,7 +41,7 @@ function getToken(message){
     body: JSON.stringify(payload)
   },function(error , response , body){
     console.log(body);
-    sendFcm(body.token,message)
+    sendFcm(JSON.parse(body).token,message)
   });
 }
 
