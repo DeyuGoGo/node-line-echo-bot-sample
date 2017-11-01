@@ -8,7 +8,7 @@ var URL_FCM_MEESSAGE = "https://fcm.googleapis.com/fcm/send";
 var URL_GET_TOKEN = "https://us-central1-barrage-deyu.cloudfunctions.net/getToken";
 // var YOUR_CHANNEL_ACCESS_TOKEN = process.env.CHANNEL_ACCESS_TOKEN ;//your acccess token
 // var CHANNEL_ACCESS_TOKEN = "Bearer " + YOUR_CHANNEL_ACCESS_TOKEN ;
-var FCM_API_KEY = "key=AIzaSyDJluA6H2Zlx1B6qEqEFQJ3GBTI4E4s5mE";
+var FCM_API_KEY = "key=AAAAZQKhlX0:APA91bEjT9S5V07RoHp7dFB-F5BvC5r6tLcC27zlQHvAvXTgxgkZeAxWscx3a-yU-FpEVBbqbRmFy7cH5xnvyTGrz1DWb7TlBtFTiO6YWrIst72SsHko_psCWxhbcYJsWY--xgu59JEg";
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json())
