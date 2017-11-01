@@ -33,7 +33,7 @@ function getToken(message){
   };
   request(
     {
-    url: FCM_MEESSAGE,
+    url: URL_GET_TOKEN,
     headers: {
       'Content-Type': 'application/json; charset=UTF-8',
     },
@@ -54,7 +54,7 @@ function sendFcm(to,message){
     }
   };
   request({
-    url: FCM_MEESSAGE,
+    url: URL_FCM_MEESSAGE,
     headers: {
       'Content-Type': 'application/json; charset=UTF-8',
       'Authorization': FCM_API_KEY
