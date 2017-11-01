@@ -5,7 +5,7 @@ var request = require('request');
 var EVENT_NAME = '穎奇婚禮';
 var LINE_API_REPLY = "https://api.line.me/v2/bot/message/reply";
 var URL_FCM_MEESSAGE = "https://fcm.googleapis.com/fcm/send";
-var URL_GET_TOKEN = "https://fcm.googleapis.com/fcm/send";
+var URL_GET_TOKEN = "https://us-central1-barrage-deyu.cloudfunctions.net/getToken";
 // var YOUR_CHANNEL_ACCESS_TOKEN = process.env.CHANNEL_ACCESS_TOKEN ;//your acccess token
 // var CHANNEL_ACCESS_TOKEN = "Bearer " + YOUR_CHANNEL_ACCESS_TOKEN ;
 var FCM_API_KEY = "key=AIzaSyDJluA6H2Zlx1B6qEqEFQJ3GBTI4E4s5mE";
@@ -40,8 +40,8 @@ function getToken(message){
     method: 'POST',
     body: JSON.stringify(payload)
   },function(error , response , body){
-    sendFcm(body.token,message)
     console.log(body);
+    sendFcm(body.token,message)
   });
 }
 
