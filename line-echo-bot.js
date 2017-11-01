@@ -31,7 +31,9 @@ function getToken(message){
   const payload = {
     uid: EVENT_NAME
   };
-  request(url: FCM_MEESSAGE,
+  request(
+    {
+    url: FCM_MEESSAGE,
     headers: {
       'Content-Type': 'application/json; charset=UTF-8',
     },
