@@ -91,7 +91,7 @@ function sendFcm(to,message){
 }
 
 function sendFcmToDevices(registration_ids,message){
-  console.log(to);
+  console.log(registration_ids);
   const payload = {
     registration_ids: registration_ids,
     data: {
