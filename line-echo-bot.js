@@ -60,7 +60,7 @@ function getTokens(message){
     body: JSON.stringify(payload)
   },function(error , response , body){
     console.log(body);
-    sendFcmToDevices(JSON.parse(body).token,message);
+    sendFcmToDevices(JSON.parse(body).tokens,message);
   });
 }
 
